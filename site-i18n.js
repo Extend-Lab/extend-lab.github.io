@@ -57,7 +57,7 @@
       pages: {
         index: {
           title: "EXTEND Lab",
-          metaDescription: "香港科技大学（广州）EXTEND Lab。",
+          metaDescription: "香港科技大学（广州）EXTEND Lab，专注强化学习、多智能体系统、机器人与具身智能、边缘智能及无线系统研究。",
           updates: [
             {
               selector: ".hero-eyebrow",
