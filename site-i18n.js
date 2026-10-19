@@ -232,7 +232,7 @@
             }
           ]
         },
-        blog: {
+        insights: {
           title: "EXTEND 博客 – EXTEND Lab",
           metaDescription: "来自 EXTEND Lab 的技术文章、论文解读、教程与演示。",
           updates: [
@@ -292,14 +292,14 @@
               selector: ".person-body",
               multiHtml: [
                 "<h3>于佳冬</h3><p><span class=\"person-role-line\">助理教授</span><span class=\"person-role-line\">物联网和人工智能学域</span></p>",
-                "<h3>张育龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
-                "<h3>熊浩</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
-                "<h3>张子儒</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
-                "<h3>郑佳宁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
-                "<h3>张栩棱</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
-                "<h3>张馨仁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
-                "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
-                "<h3>宋光辉</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2026年至今</span></p>",
+                "<h3>张育龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年春季至今</span></p>",
+                "<h3>熊浩</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年秋季至今</span></p>",
+                "<h3>张子儒</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
+                "<h3>郑佳宁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
+                "<h3>张栩棱</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
+                "<h3>张馨仁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年秋季至今</span></p>",
+                "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年秋季至今</span></p>",
+                "<h3>宋光辉</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2026年秋季至今</span></p>",
                 "<h3>朱光智</h3><p>硕士研究生</p>",
                 "<h3>王年福</h3><p>来自哈尔滨工业大学（深圳）与鹏城实验室的访问博士生</p>",
                 "<h3>陆荣琦</h3><p><span class=\"person-role-line\">硕士毕业于西安电子科技大学。</span><span class=\"person-role-line\">即将入职华为。</span></p>",
@@ -324,7 +324,7 @@
             }
           ]
         },
-        support: {
+        collaborate: {
           title: "合作 – EXTEND Lab",
           metaDescription: "EXTEND Lab 合作与招募信息。",
           updates: [
@@ -354,7 +354,7 @@
               multiHtml: [
                 "<h3>合作与资助伙伴</h3><p>我们积极寻求资助伙伴和产业合作方，共同支持有潜力的学生，并推动智能系统、边缘计算与自主机器人等方向的跨学科研究。</p>",
                 "<h3>潜在研究生申请者</h3><p>我们欢迎对 RL、MARL、MAS、边缘智能与机器人有浓厚兴趣、且具备扎实基础的 MPhil 与 PhD 申请者。</p><ul class=\"support-list\"><li>欢迎来自 HKUST(GZ) AI、ROAS、DSA、IoT 等学域的学生申请。</li><li>也欢迎通过 Red Bird MPhil/PhD Program 以及其他交叉培养通道申请。</li></ul>",
-                "<h3>本科生</h3><p>欢迎来自 HKUST(GZ) 与 HKUST 清水湾校区的优秀本科生参与我们的研究项目。</p><ul class=\"support-list\"><li>UG Research Program 是积累实践科研经验的重要入口。</li><li>也欢迎对智能算法与自主系统感兴趣的同学通过 Directed Study Projects 加入。</li></ul>",
+                "<h3>本科生</h3><p>欢迎来自 HKUST(GZ)、HKUST 清水湾校区及其他高校的优秀本科生参与我们的研究项目。</p><ul class=\"support-list\"><li>UG Research Program 是积累实践科研经验的重要入口。</li><li>也欢迎对智能算法与自主系统感兴趣的同学通过 Directed Study Projects 加入。</li></ul>",
                 "<h3>访问博士生与访问学者</h3><p>我们欢迎来自世界各地、研究兴趣与实验室方向契合的访问博士生和访问学者。</p><ul class=\"support-list\"><li>优先方向包括 RL、MARL、MAS、边缘智能与机器人。</li><li>对于与团队当前研究紧密相关的来访计划，我们可以提供支持。</li></ul>",
                 "<h3>所需材料</h3><ul class=\"support-list\"><li>个人简历</li><li>动机信 / Cover letter</li><li>围绕 RL、MARL、MAS、边缘智能或机器人的研究计划</li><li>如适用，语言能力证明</li><li>如方便，可提供一封推荐信</li></ul>",
                 "<h3>我们可提供的支持</h3><p>对于研究兴趣高度契合的申请者，我们可提供有条件邀请函，以支持奖学金或资助申请。</p><p class=\"support-note\">如有需要，我们也可以分享一份非正式流程说明，帮助访问学者了解 HKUST(GZ) 的行政办理流程。</p><p class=\"support-note\">联系：<a href=\"mailto:extend-lab@hkust-gz.edu.cn\" class=\"email\">extend-lab@hkust-gz.edu.cn</a></p>"
@@ -864,7 +864,7 @@
 
     const insightsLink = navItems[6] && navItems[6].closest("a");
     if (insightsLink) {
-      insightsLink.setAttribute("href", "blog/");
+      insightsLink.setAttribute("href", "insights/");
     }
 
     document.querySelectorAll(".site-search-input").forEach((input) => {

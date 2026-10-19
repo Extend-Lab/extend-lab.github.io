@@ -21,13 +21,13 @@ DESCRIPTIONS = {
     'events': 'Explore EXTEND Lab seminars, research sharing sessions, and recent academic activities.',
     'events/extend-sharing': 'Explore EXTEND Sharing sessions from EXTEND Lab, featuring research discussions and knowledge exchange.',
     'events/recent-activity': 'Discover recent EXTEND Lab academic activities, research exchanges, and community events.',
-    'support': 'Collaborate with EXTEND Lab at HKUST(GZ): explore graduate research, undergraduate projects, visiting scholar opportunities, and industry partnerships.',
+    'collaborate': 'Collaborate with EXTEND Lab at HKUST(GZ): explore graduate research, undergraduate projects, visiting scholar opportunities, and industry partnerships.',
     'resources': 'The EXTEND Lab resources page for models, data, open courses, and research materials. Resources will be added as they become available.',
 }
 
 
 def refresh():
-    pages = [ROOT / 'index.html'] + sorted(p for p in ROOT.glob('*/**/index.html') if p.parts[len(ROOT.parts)] in {'about', 'research', 'projects', 'people', 'publications', 'news', 'events', 'support', 'resources', 'blog'})
+    pages = [ROOT / 'index.html'] + sorted(p for p in ROOT.glob('*/**/index.html') if p.parts[len(ROOT.parts)] in {'about', 'research', 'projects', 'people', 'publications', 'news', 'events', 'collaborate', 'resources', 'insights'})
     urls = []
     for page in pages:
         key = page.parent.relative_to(ROOT).as_posix()
@@ -44,7 +44,7 @@ def refresh():
         title = html.unescape(re.search(r'<title>(.*?)</title>', source).group(1))
         description = html.unescape(re.search(r'<meta name="description" content="([^"]*)"', source).group(1))
         esc = lambda s: html.escape(s, quote=True)
-        tags = [f'<link rel="canonical" href="{url}">', '<meta property="og:site_name" content="EXTEND Lab">', f'<meta property="og:type" content="{"article" if key.startswith("blog/") else "website"}">', f'<meta property="og:title" content="{esc(title)}">', f'<meta property="og:description" content="{esc(description)}">', f'<meta property="og:url" content="{url}">', '<meta name="twitter:card" content="summary">', f'<meta name="twitter:title" content="{esc(title)}">', f'<meta name="twitter:description" content="{esc(description)}">']
+        tags = [f'<link rel="canonical" href="{url}">', '<meta property="og:site_name" content="EXTEND Lab">', f'<meta property="og:type" content="{"article" if key.startswith("insights/") else "website"}">', f'<meta property="og:title" content="{esc(title)}">', f'<meta property="og:description" content="{esc(description)}">', f'<meta property="og:url" content="{url}">', '<meta name="twitter:card" content="summary">', f'<meta name="twitter:title" content="{esc(title)}">', f'<meta name="twitter:description" content="{esc(description)}">']
         if not key:
             data = {'@context': 'https://schema.org', '@graph': [
                 {'@type': 'ResearchOrganization', '@id': ORIGIN + '/#organization', 'name': 'EXTEND Lab', 'url': ORIGIN + '/', 'description': description, 'parentOrganization': {'@type': 'CollegeOrUniversity', 'name': 'The Hong Kong University of Science and Technology (Guangzhou)'}, 'knowsAbout': ['Reinforcement learning', 'Multi-agent systems', 'Embodied AI', 'Robotics', 'Edge intelligence', 'Wireless systems']},

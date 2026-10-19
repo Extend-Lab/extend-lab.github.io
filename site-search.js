@@ -119,7 +119,7 @@ const FALLBACK_SEARCH_INDEX = [
   {
     title: "EXTEND Insights",
     titleZh: "EXTEND 洞见",
-    url: "blog/",
+    url: "insights/",
     category: "Insights",
     categoryZh: "洞见",
     text: "technical articles paper explainers tutorials demos research insights",
@@ -128,7 +128,7 @@ const FALLBACK_SEARCH_INDEX = [
   {
     title: "Learning Communication-Efficient Protocols in Multi-Agent Reinforcement Learning",
     titleZh: "多智能体强化学习中的高效通信协议",
-    url: "blog/learning-communication-efficient-protocols-in-marl/",
+    url: "insights/learning-communication-efficient-protocols-in-marl/",
     category: "Insights",
     categoryZh: "洞见",
     text: "multi-agent reinforcement learning MARL communication efficiency protocols partial observability CTDE IEI SEI TEI traffic junction Xinren Zhang Jiadong Yu",
@@ -137,7 +137,7 @@ const FALLBACK_SEARCH_INDEX = [
   {
     title: "The Evolution of Vision-Language-Action Models",
     titleZh: "视觉-语言-动作模型的演进",
-    url: "blog/evolution-of-vision-language-action-models/",
+    url: "insights/evolution-of-vision-language-action-models/",
     category: "Insights",
     categoryZh: "洞见",
     text: "vision language action VLA robotics embodied intelligence action generation planning real-time control reinforcement learning human video memory world models 3D tactile Guanghui Song Jiadong Yu",
@@ -146,7 +146,7 @@ const FALLBACK_SEARCH_INDEX = [
   {
     title: "OpenClaw and the Anatomy of an AI Agent",
     titleZh: "OpenClaw 与 AI Agent 的构造",
-    url: "blog/openclaw-from-language-models-to-action/",
+    url: "insights/openclaw-from-language-models-to-action/",
     category: "Insights",
     categoryZh: "洞见",
     text: "openclaw ai agent runtime prompts tools skills subagents memory heartbeat scheduling context engineering safety robotics multi-agent systems",
@@ -155,7 +155,7 @@ const FALLBACK_SEARCH_INDEX = [
   {
     title: "Collaborate",
     titleZh: "合作",
-    url: "support/",
+    url: "collaborate/",
     category: "Collaborate",
     categoryZh: "合作",
     text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials",

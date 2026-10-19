@@ -7,16 +7,7 @@
     <loc>https://extend-lab.com/about/</loc>
   </url>
   <url>
-    <loc>https://extend-lab.com/blog/evolution-of-vision-language-action-models/</loc>
-  </url>
-  <url>
-    <loc>https://extend-lab.com/blog/</loc>
-  </url>
-  <url>
-    <loc>https://extend-lab.com/blog/learning-communication-efficient-protocols-in-marl/</loc>
-  </url>
-  <url>
-    <loc>https://extend-lab.com/blog/openclaw-from-language-models-to-action/</loc>
+    <loc>https://extend-lab.com/collaborate/</loc>
   </url>
   <url>
     <loc>https://extend-lab.com/events/extend-sharing/</loc>
@@ -29,6 +20,18 @@
   </url>
   <url>
     <loc>https://extend-lab.com/events/tei-seminar/</loc>
+  </url>
+  <url>
+    <loc>https://extend-lab.com/insights/evolution-of-vision-language-action-models/</loc>
+  </url>
+  <url>
+    <loc>https://extend-lab.com/insights/</loc>
+  </url>
+  <url>
+    <loc>https://extend-lab.com/insights/learning-communication-efficient-protocols-in-marl/</loc>
+  </url>
+  <url>
+    <loc>https://extend-lab.com/insights/openclaw-from-language-models-to-action/</loc>
   </url>
   <url>
     <loc>https://extend-lab.com/news/</loc>
@@ -53,8 +56,5 @@
   </url>
   <url>
     <loc>https://extend-lab.com/resources/</loc>
-  </url>
-  <url>
-    <loc>https://extend-lab.com/support/</loc>
   </url>
 </urlset>

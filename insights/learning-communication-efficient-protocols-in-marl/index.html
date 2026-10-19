@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<base href="../../">
+<title>Learning Communication-Efficient Protocols in Multi-Agent Reinforcement Learning – EXTEND Blog</title>
+<meta name="description" content="How communication-efficiency metrics and efficiency-aware training help multi-agent reinforcement learning systems coordinate with fewer, more useful messages.">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<script src="site-i18n.js?v=20261019-routes" defer></script>
+<script src="site-search.js?v=20261019-routes" defer></script>
+<script src="hero-cosmos.js?v=20260911-communication-efficient-marl-quote" defer></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-2ab0c76efacf72616ee6bc98aec9b576.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="custom.css?v=20261008-upright-text">
+<link rel="stylesheet" href="typography.css?v=20261008-upright-text">
+<!-- SEO metadata -->
+<link rel="canonical" href="https://extend-lab.com/insights/learning-communication-efficient-protocols-in-marl/">
+<meta property="og:site_name" content="EXTEND Lab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Learning Communication-Efficient Protocols in Multi-Agent Reinforcement Learning – EXTEND Blog">
+<meta property="og:description" content="How communication-efficiency metrics and efficiency-aware training help multi-agent reinforcement learning systems coordinate with fewer, more useful messages.">
+<meta property="og:url" content="https://extend-lab.com/insights/learning-communication-efficient-protocols-in-marl/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Learning Communication-Efficient Protocols in Multi-Agent Reinforcement Learning – EXTEND Blog">
+<meta name="twitter:description" content="How communication-efficiency metrics and efficiency-aware training help multi-agent reinforcement learning systems coordinate with fewer, more useful messages.">
+<!-- /SEO metadata -->
+</head>
+<body class="nav-fixed quarto-light blog-article-page marl-article-page">
+<header id="quarto-header" class="headroom fixed-top">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+        <a class="navbar-brand" href="./"><span class="navbar-title brand-mark"><span class="brand-rainbow" aria-label="EXTEND"><span>E</span><span>X</span><span>T</span><span>E</span><span>N</span><span>D</span></span><span class="brand-lab"> Lab</span></span></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar-nav-scroll me-auto">
+          <li class="nav-item"><a class="nav-link" href="about/"><span class="menu-text">About</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="news/"><span class="menu-text">News</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="events/"><span class="menu-text">Events</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="research/"><span class="menu-text">Research</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="projects/"><span class="menu-text">Projects</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="people/"><span class="menu-text">People</span></a></li>
+          <li class="nav-item"><a class="nav-link active" href="insights/" aria-current="page"><span class="menu-text">Insights</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="collaborate/"><span class="menu-text">Collaborate</span></a></li>
+        </ul>
+        <div class="site-search" role="search">
+          <input class="site-search-input" type="search" placeholder="Search site" aria-label="Search site" autocomplete="off">
+          <div class="site-search-results" hidden></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<main class="content column-page" id="quarto-document-content">
+  <header class="article-title-block">
+    <p class="archive-return"><a class="archive-return-link" href="insights/">Back to Insights</a></p>
+    <div class="article-title-inner">
+      <div class="article-labels" aria-label="Article topics">
+        <span>Technical Article</span>
+        <span>Multi-Agent Systems</span>
+        <span>Reinforcement Learning</span>
+      </div>
+      <h1>Learning Communication-Efficient Protocols in Multi-Agent Reinforcement Learning</h1>
+      <p class="article-deck">How communication-efficiency metrics and efficiency-aware training help agents coordinate with fewer, more useful messages.</p>
+      <div class="article-meta" aria-label="Article details">
+        <span>By Ms. Xinren Zhang</span>
+        <span>Edited by Dr. Jiadong Yu</span>
+        <span>5 September 2026</span>
+        <span>12 min read</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="blog-article">
+    <aside class="article-toc" aria-label="Table of contents">
+      <p>In this article</p>
+      <ol class="article-toc-main">
+        <li><a href="insights/learning-communication-efficient-protocols-in-marl/#why-efficiency">01 · Why Efficiency?</a></li>
+        <li><a href="insights/learning-communication-efficient-protocols-in-marl/#unified-framework">02 · A Unified Framework</a></li>
+        <li class="article-toc-openclaw">
+          <a href="insights/learning-communication-efficient-protocols-in-marl/#metrics-objective">03 · Metrics and Objective Design</a>
+          <ul>
+            <li><a href="insights/learning-communication-efficient-protocols-in-marl/#three-metrics">IEI, SEI, and TEI</a></li>
+            <li><a href="insights/learning-communication-efficient-protocols-in-marl/#depth-tradeoff">Communication Depth</a></li>
+            <li><a href="insights/learning-communication-efficient-protocols-in-marl/#efficiency-aware-training">Efficiency-Aware Training</a></li>
+          </ul>
+        </li>
+        <li><a href="insights/learning-communication-efficient-protocols-in-marl/#experimental-evidence">04 · Experimental Evidence</a></li>
+        <li><a href="insights/learning-communication-efficient-protocols-in-marl/#implications-outlook">05 · Implications and Outlook</a></li>
+      </ol>
+    </aside>
+
+    <figure class="article-hero-figure">
+      <img src="assets/blog/communication-efficient-marl/communication-efficient-marl-hero.png" alt="Autonomous vehicles coordinate through a four-way intersection using a sparse set of communication links">
+      <figcaption>Communication-efficient multi-agent learning asks a practical question: how much useful coordination can agents achieve with each message they exchange?</figcaption>
+    </figure>
+
+    <div class="article-layout">
+      <div class="article-body">
+        <p class="article-lead">Multi-agent reinforcement learning (MARL) often depends on communication. When each agent sees only part of the environment, messages can supply missing information and support coordinated action. Yet every transmission consumes bandwidth, adds latency, and may use energy. A protocol can therefore deliver strong task performance while communicating inefficiently.</p>
+
+        <blockquote class="article-thesis">
+          <p>Task performance and communication cost should be evaluated together. Better coordination does not always require more communication.</p>
+        </blockquote>
+
+        <p>This article follows the presentation from motivation to deployment. It first explains why communication belongs inside the learned policy, then introduces a unified description of multi-round protocols. Three complementary metrics reveal what success rate alone misses. Experiments in Traffic Junction then show how efficiency-aware training can improve both coordination and communication efficiency.</p>
+
+        <section id="why-efficiency" class="article-main-section">
+          <p class="article-section-number">01 · Why Efficiency?</p>
+          <h2>Communication is part of the learned policy</h2>
+          <p>In a partially observable environment, no individual agent can see the full global state. Each agent acts from its local observation, while the policies of the other agents continue to change during training. From one learner’s perspective, the environment is both incomplete and non-stationary.</p>
+
+          <p>Learned communication extends the information available before action selection. An agent encodes its internal state into a message, receives information from teammates, and updates its representation before acting. Because end-to-end training can adapt message content and communication topology to the task, communication becomes an integral part of the policy rather than a separate external channel.</p>
+
+          <figure class="article-figure article-slide-figure article-figure-wide">
+            <img src="assets/blog/communication-efficient-marl/why-communication-matters.png" alt="Three agents receive partial observations of a global state and exchange learned messages before acting">
+            <figcaption><strong>Why agents communicate.</strong> Messages expand an agent’s effective observation before it selects an action, supporting coordination under partial observability and non-stationarity. Original diagram from the EXTEND presentation.</figcaption>
+          </figure>
+
+          <h3>From capability to efficiency</h3>
+          <p>Learned communication research has progressively added control over when, with whom, and what agents communicate. RIAL and DIAL introduced differentiable message channels. CommNet used continuous broadcast. IC3Net added context-dependent gating, while TarMAC used targeted attention. MAGIC represented communication as a dynamic graph with repeated exchanges. More recent BVME and GACG approaches use bottlenecks or sparse topology.</p>
+
+          <figure class="article-figure article-slide-figure article-figure-wide">
+            <img src="assets/blog/communication-efficient-marl/architecture-evolution.png" alt="Timeline of learned communication architectures from RIAL and DIAL through CommNet, IC3Net, TarMAC, MAGIC, BVME, and GACG">
+            <figcaption><strong>Architecture evolution.</strong> Prior work increasingly controlled message channels, recipients, and topology, while the information and resource cost of communication remained less explicit. Original diagram from the EXTEND presentation.</figcaption>
+          </figure>
+
+          <p>The dominant question was whether a more capable communication mechanism could improve task performance. Communication cost received less direct attention. A second exchange round may raise the final success rate or accelerate convergence, but it also increases message volume. Success rate alone cannot tell us whether that added communication was worthwhile.</p>
+
+          <figure class="article-figure article-slide-figure article-figure-wide">
+            <img src="assets/blog/communication-efficient-marl/communication-rounds-performance.png" alt="Training curves compare one-round and two-round communication across seven multi-agent learning architectures">
+            <figcaption><strong>More rounds can improve performance, at a cost.</strong> A second communication round helps several architectures converge faster or reach a higher success rate, while necessarily increasing communication volume. Original slide from the EXTEND presentation.</figcaption>
+          </figure>
+        </section>
+
+        <section id="unified-framework" class="article-main-section">
+          <p class="article-section-number">02 · A Unified Communication Protocol Framework</p>
+          <h2>A common description for diverse architectures</h2>
+          <p>The proposed framework represents each agent with a local observation encoder followed by a repeated communication block. Before choosing an environment action, an agent may perform one or more communication rounds. Every round contains four operations:</p>
+
+          <ol class="article-strategy-list">
+            <li><strong>Encode a message.</strong> The agent converts its current hidden state into information that teammates can receive.</li>
+            <li><strong>Select a topology.</strong> The protocol determines which agents communicate with one another.</li>
+            <li><strong>Aggregate received messages.</strong> Each agent combines information from its connected teammates.</li>
+            <li><strong>Update the hidden state.</strong> The aggregated information changes the representation used for the next round or the final action.</li>
+          </ol>
+
+          <figure class="article-figure article-slide-figure article-figure-wide">
+            <img src="assets/blog/communication-efficient-marl/unified-communication-framework.png" alt="A multi-agent framework repeats message encoding, topology selection, aggregation, and hidden-state updates before action selection">
+            <figcaption><strong>The repeated communication block.</strong> Changing the encoder, topology selector, aggregation rule, update rule, or round count allows different learned communication architectures to be compared inside one framework. Original diagram from the EXTEND presentation.</figcaption>
+          </figure>
+
+          <p>The framework follows centralized training with decentralized execution (CTDE). During training, the global state can support value estimation and optimization. During execution, each agent relies on its local observation and the messages it receives. That distinction matters in deployment: a protocol must remain useful when the centralized information available to the trainer no longer exists.</p>
+        </section>
+
+        <section id="metrics-objective" class="article-main-section article-openclaw-section">
+          <p class="article-section-number">03 · Metrics and Training Objective Design</p>
+          <h2>Three views of communication efficiency</h2>
+          <p>Communication efficiency has several dimensions. Messages may be compact but indistinguishable across agents. A highly specialized protocol may still use too many transmissions. The study therefore introduces three Communication Efficiency Metrics (CEMs) that examine information content, role differentiation, and explicit communication use.</p>
+
+          <section id="three-metrics" class="article-subsection">
+            <p class="article-subsection-label">Metrics · 01</p>
+            <h3>IEI, SEI, and TEI</h3>
+
+            <div class="article-table-wrap">
+              <table class="article-table">
+                <thead>
+                  <tr><th>Metric</th><th>What it measures</th><th>Preferred direction</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Information Entropy Efficiency Index (IEI)</td><td>Message entropy required per unit of task success</td><td>Lower: more compact and structured messages</td></tr>
+                  <tr><td>Specialization Efficiency Index (SEI)</td><td>Cross-agent message similarity relative to task success</td><td>Lower: stronger differentiation among agents’ messages and roles</td></tr>
+                  <tr><td>Topology Efficiency Index (TEI)</td><td>Task success obtained per communication act</td><td>Higher: greater performance with fewer communication resources</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/efficiency-metrics.png" alt="Three panels define IEI for information compactness, SEI for role specialization, and TEI for resource parsimony">
+              <figcaption><strong>Three complementary metrics.</strong> IEI and SEI describe the structure and differentiation of learned messages; TEI makes the communication cost explicit. Original diagram from the EXTEND presentation.</figcaption>
+            </figure>
+
+            <p>During one-round training, the metrics develop distinct profiles across the seven protocols. IEI and SEI generally fall as messages become more compact and specialized, while TEI generally rises. These trajectories reveal differences in how a protocol communicates even when its task success looks similar.</p>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/one-round-efficiency-profiles.png" alt="IEI and SEI decrease while TEI increases over 2,000 training epochs for seven one-round communication protocols">
+              <figcaption><strong>Distinct one-round efficiency profiles.</strong> Protocols differ in message compactness, specialization, and task success per communication act throughout training. Original results from the EXTEND presentation.</figcaption>
+            </figure>
+          </section>
+
+          <section id="depth-tradeoff" class="article-subsection">
+            <p class="article-subsection-label">Metrics · 02</p>
+            <h3>Communication depth changes the trade-off</h3>
+            <p>Increasing communication depth from one round to two or three generally reduces IEI and SEI. Repeated exchanges can sharpen the information in each message and encourage more specialized agent roles. TEI, however, decreases consistently because every added round produces more communication acts.</p>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/communication-depth-tradeoff.png" alt="Bar charts compare IEI, SEI, and TEI for one, two, and three communication rounds across seven architectures">
+              <figcaption><strong>The communication-depth trade-off.</strong> Additional rounds often improve compactness and specialization, but the cost of extra transmissions lowers TEI. Original results from the EXTEND presentation.</figcaption>
+            </figure>
+
+            <div class="article-highlight">
+              <p><strong>More focused messages do not guarantee more efficient communication.</strong> Message quality must be interpreted together with the number of communication acts needed to achieve the task.</p>
+            </div>
+          </section>
+
+          <section id="efficiency-aware-training" class="article-subsection">
+            <p class="article-subsection-label">Objective · 03</p>
+            <h3>Make efficiency part of the training objective</h3>
+            <p>The study augments the original task loss with IEI- and SEI-based regularization. Training initially emphasizes task learning. As task success stabilizes, the efficiency terms become stronger and encourage messages that are more compact and differentiated. Smooth surrogate functions keep this adjustment suitable for gradient-based optimization.</p>
+
+            <p>TEI remains an evaluation metric in these experiments. Several evaluated architectures use a fixed communication topology, so the number of communication acts does not change during training and offers little useful gradient signal. IEI and SEI can directly shape message content and role specialization.</p>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/efficiency-aware-objective.png" alt="Training objective combines task loss with IEI and SEI regularization whose influence grows as task success stabilizes">
+              <figcaption><strong>Adaptive efficiency pressure.</strong> Agents first learn a workable task policy, then face stronger regularization that rewards compact and specialized communication. Original objective design from the EXTEND presentation.</figcaption>
+            </figure>
+          </section>
+        </section>
+
+        <section id="experimental-evidence" class="article-main-section article-openclaw-section">
+          <p class="article-section-number">04 · Experimental Evidence</p>
+          <h2>Traffic Junction under partial observations</h2>
+          <p>The experiments use Traffic Junction, a partially observable collision-avoidance benchmark in which multiple agents coordinate to cross an intersection. Each episode contains 20 steps, and the models train for 2,000 epochs. The evaluation covers MAGIC, CommNet, TarMAC, GA-Comm, IC3Net, BVME, and GACG under one, two, and three communication rounds. It also compares standard one-round training with efficiency-aware one-round training.</p>
+
+          <figure class="article-figure article-evidence-figure">
+            <img src="assets/blog/communication-efficient-marl/traffic-junction-animation.gif" alt="Animated Traffic Junction benchmark showing agents approaching and crossing a four-way intersection with local observation ranges">
+            <figcaption><strong>The Traffic Junction benchmark.</strong> Agents must avoid collisions while acting from partial observations, which makes timely information sharing useful. Animation supplied with the EXTEND presentation.</figcaption>
+          </figure>
+
+          <section id="success-and-tei" class="article-subsection">
+            <p class="article-subsection-label">Result · 01</p>
+            <h3>Optimize the objective before increasing communication depth</h3>
+            <p>Compared with standard one-round training, adding IEI and SEI improves final task success and TEI for all seven architectures. The gains are strongest for IC3Net, CommNet, MAGIC, and GACG, and more moderate for TarMAC, GA-Comm, and BVME.</p>
+
+            <p>For GA-Comm, MAGIC, IC3Net, and GACG, the efficiency-aware one-round setting is preferable to adding communication rounds. The remaining architectures gain only marginally from extra rounds while their TEI falls. This suggests a practical design order: improve what agents say in the existing round before giving them more opportunities to communicate.</p>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/performance-and-tei.png" alt="Success-rate and TEI curves compare standard one-round, efficiency-aware one-round, two-round, and three-round training across seven protocols">
+              <figcaption><strong>Consistent gains from efficiency-aware training.</strong> Objective augmentation improves final success and TEI across all seven evaluated protocols. Original results from the EXTEND presentation.</figcaption>
+            </figure>
+          </section>
+
+          <section id="message-structure" class="article-subsection">
+            <p class="article-subsection-label">Result · 02</p>
+            <h3>The objective changes the learned message structure</h3>
+            <p>The modified objective changes more than the speed of task learning. For CommNet, IEI is 36% lower and reaches that level 59% faster, while SEI is 40% lower with 48% faster convergence. For IC3Net, IEI is 19% lower and converges 58% faster, while SEI is 36% lower with 56% faster convergence.</p>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/compact-specialized-messages.png" alt="CommNet and IC3Net curves show lower IEI and SEI with efficiency-aware loss adjustment">
+              <figcaption><strong>Compact and specialized messages.</strong> Lower IEI and SEI show that efficiency-aware training changes the structure of the learned protocol, not only task convergence. Original results from the EXTEND presentation.</figcaption>
+            </figure>
+          </section>
+
+          <section id="pareto-frontier" class="article-subsection">
+            <p class="article-subsection-label">Result · 03</p>
+            <h3>One efficient round improves the performance-cost balance</h3>
+            <p>The performance-cost plot makes communication depth visible. The desired region combines high task success with fewer messages. Efficiency-aware one-round methods move toward that region, while two-round communication nearly doubles message volume. Under bandwidth or latency constraints, changing the objective can therefore produce a better operating point than adding another exchange.</p>
+
+            <figure class="article-figure article-slide-figure article-figure-wide">
+              <img src="assets/blog/communication-efficient-marl/pareto-frontier.png" alt="Scatter plot places communication methods by maximum success rate and total message count, with the ideal region at high success and low cost">
+              <figcaption><strong>The performance-cost frontier.</strong> Efficiency-aware one-round methods move toward high success with fewer total messages. Original analysis from the EXTEND presentation.</figcaption>
+            </figure>
+          </section>
+        </section>
+
+        <section id="implications-outlook" class="article-main-section article-conclusion">
+          <p class="article-section-number">05 · Implications and Outlook</p>
+          <h2>Communication as a constrained system resource</h2>
+          <p>The results suggest a direct workflow for communication-aware MARL. First, describe different protocols within a common multi-round CTDE model. Next, measure message compactness, role specialization, and explicit communication use with IEI, SEI, and TEI. When communication resources matter, optimize efficiency as part of training rather than treating it only as a post-hoc statistic.</p>
+
+          <figure class="article-figure article-slide-figure article-figure-wide">
+            <img src="assets/blog/communication-efficient-marl/model-measure-optimize.png" alt="Three-part summary describes a unified model, three communication-efficiency measures, and efficiency-aware optimization">
+            <figcaption><strong>Model, measure, optimize.</strong> A common protocol description enables comparison; the three metrics expose complementary costs; the adjusted objective improves task success and communication efficiency together. Original summary from the EXTEND presentation.</figcaption>
+          </figure>
+
+          <p>Additional communication rounds should not be the default response to a coordination problem. Their value depends on the useful information they contribute relative to bandwidth, latency, and energy cost. The best operating point will differ across deployments, but the trade-off should remain visible during system design.</p>
+
+          <h3>Open questions</h3>
+          <ul>
+            <li>Can a learnable topology use explicit communication cost during training so that TEI becomes an optimization signal?</li>
+            <li>How should the metrics change when links are delayed, unreliable, quantized, or lossy?</li>
+            <li>How can compactness be separated from semantic usefulness so that low entropy does not reward uninformative messages?</li>
+            <li>How well do efficiency-aware protocols transfer across team sizes, tasks, and agent behaviors?</li>
+          </ul>
+        </section>
+
+        <section class="article-literary-close hero-panel-cosmos" aria-label="Closing quotation from Helen Keller">
+          <canvas class="hero-cosmos-canvas" aria-hidden="true"></canvas>
+          <div class="hero-cosmos-vignette" aria-hidden="true"></div>
+          <p class="article-literary-kicker">The power of coordination</p>
+          <blockquote>
+            <p>“Alone we can do so little; together we can do so much.”</p>
+            <cite>— Helen Keller</cite>
+          </blockquote>
+        </section>
+
+        <section class="article-references" aria-labelledby="references-heading">
+          <h2 id="references-heading">Related publications</h2>
+          <ul>
+            <li>X. Zhang, J. Yu*, and Z. Zhong, “<a href="https://doi.org/10.1109/TMLCN.2026.3719222">Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</a>,” <em>IEEE Transactions on Machine Learning in Communications and Networking</em>, vol. 4, pp. 1335–1352, 2026. <a href="https://doi.org/10.1109/TMLCN.2026.3719222">doi: 10.1109/TMLCN.2026.3719222</a>.</li>
+            <li>X. Zhang, Z. Zhong, and J. Yu, “<a href="https://arxiv.org/abs/2606.07200">Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL</a>,” in <em>The Third Reinforcement Learning Conference (RLC)</em>, Montreal, Canada, 2026. <a href="https://arxiv.org/abs/2606.07200">arXiv:2606.07200</a>.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </article>
+</main>
+</div>
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">&nbsp;</div>
+    <div class="nav-footer-center"><a href="https://extend-lab.com/">EXTEND Lab</a> © <script>document.write(new Date().getFullYear())</script></div>
+    <div class="nav-footer-right">&nbsp;</div>
+  </div>
+</footer>
+</body>
+</html>
