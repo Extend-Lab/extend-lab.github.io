@@ -3,30 +3,30 @@
 .person-flip::before, .person-flip::after { display: none; }
 .person-flip-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 460ms cubic-bezier(.22,.7,.2,1); }
 .person-flip.is-flipped .person-flip-inner { transform: rotateY(180deg); }
-.person-front, .person-back { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 1.25rem; border: 1px solid #d6e3ec; background: linear-gradient(160deg,#fff,#f7fafc); box-shadow: 0 10px 28px rgba(16,44,79,.07); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.person-front, .person-back { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 1.25rem; border: 1px solid #d4e4f2; background: linear-gradient(160deg,#fff,#f8fbff); box-shadow: 0 10px 28px rgba(16,44,79,.07); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .person-front { cursor: pointer; }
 .person-front .person-photo { flex: 1; min-height: 0; height: 0; aspect-ratio: auto; object-fit: cover; margin: 0 0 1rem; }
 .person-front .person-body { min-height: 86px; }
 .person-flip .person-body h3, .person-back h3 { font-size: 1.1rem; font-weight: 650; line-height: 1.35; margin: 0 0 .45rem; }
 .person-flip .person-body p { font-size: .85rem; line-height: 1.55; }
-.person-flip-button, .person-return-button { display: flex; justify-content: space-between; align-items: center; gap: .6rem; width: 100%; margin-top: auto; padding: .85rem 0 0; border: 0; border-top: 1px solid #dce7ef; background: transparent; color: #345e7c; font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; text-align: left; }
-.person-flip button:focus-visible, .person-resource:focus-visible { outline: 2px solid #377ca8; outline-offset: 4px; }
-.person-flip-button:hover, .person-return-button:hover { color: #087f91; }
-.person-back { transform: rotateY(180deg); background: #f4f8fa; border-top: 3px solid #518895; }
-.person-back-heading { padding-bottom: 1.1rem; border-bottom: 1px solid #d8e4e9; }
-.person-back-heading > span { color: #70828e; font-size: .75rem; }
+.person-flip-button, .person-return-button { display: flex; justify-content: space-between; align-items: center; gap: .6rem; width: 100%; margin-top: auto; padding: .85rem 0 0; border: 0; border-top: 1px solid #d4e4f2; background: transparent; color: #315f99; font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; text-align: left; }
+.person-flip button:focus-visible, .person-resource:focus-visible { outline: 2px solid #4a78a8; outline-offset: 4px; }
+.person-flip-button:hover, .person-return-button:hover { color: #1f4c85; }
+.person-back { transform: rotateY(180deg); background: #f0f6fc; border-top: 3px solid #4a78a8; }
+.person-back-heading { padding-bottom: 1.1rem; border-bottom: 1px solid #d4e4f2; }
+.person-back-heading > span { color: #617688; font-size: .75rem; }
 .person-back-content { flex: 1; min-height: 0; overflow-y: auto; padding: 1.2rem 0 .8rem; }
-.person-back h4 { display: flex; gap: .45rem; align-items: center; margin: 0 0 .8rem; color: #738591; font-size: .72rem; font-weight: 600; line-height: 1.5; }
+.person-back h4 { display: flex; gap: .45rem; align-items: center; margin: 0 0 .8rem; color: #617688; font-size: .72rem; font-weight: 600; line-height: 1.5; }
 .person-topics { list-style: none; padding: 0; margin: 0; display: grid; gap: .7rem; }
-.person-topics li { position: relative; padding-left: .9rem; color: #28495b; font-size: .88rem; font-weight: 500; line-height: 1.5; }
-.person-topics li::before { content: ''; position: absolute; width: 4px; height: 4px; top: .6em; left: 0; border-radius: 50%; background: #518895; }
-.person-resources { display: grid; gap: .15rem; margin-top: 1.25rem; padding-top: .75rem; border-top: 1px solid #d8e4e9; }
-.person-resource { display: flex; align-items: center; gap: .6rem; padding: .45rem 0; color: #345e7c; text-decoration: none; font-size: .8rem; font-weight: 500; }
-.person-resource > .bi:first-child { color: #648b98; font-size: .95rem; }
+.person-topics li { position: relative; padding-left: .9rem; color: #204261; font-size: .88rem; font-weight: 500; line-height: 1.5; }
+.person-topics li::before { content: ''; position: absolute; width: 4px; height: 4px; top: .6em; left: 0; border-radius: 50%; background: #4a78a8; }
+.person-resources { display: grid; gap: .15rem; margin-top: 1.25rem; padding-top: .75rem; border-top: 1px solid #d4e4f2; }
+.person-resource { display: flex; align-items: center; gap: .6rem; padding: .45rem 0; color: #315f99; text-decoration: none; font-size: .8rem; font-weight: 500; }
+.person-resource > .bi:first-child { color: #4a78a8; font-size: .95rem; }
 .person-resource > .bi:last-child { margin-left: auto; font-size: .65rem; opacity: .65; }
-.person-resource:hover { color: #087f91; text-decoration: underline; }
+.person-resource:hover { color: #1f4c85; text-decoration: underline; }
 .person-return-button { justify-content: space-between; flex-shrink: 0; }
-.person-pending { color: #70828e; font-size: .85rem; }
+.person-pending { color: #617688; font-size: .85rem; }
 @media (max-width: 767px) { .person-flip { height: 520px; } .person-front .person-photo { object-position: center 35%; } }
 @media (prefers-reduced-motion: reduce) { .person-flip-inner { transition: none; } }
 .person-back-content { padding-top: 1rem; scrollbar-width: thin; }
@@ -44,3 +44,7 @@
 .person-photo-frame-guanghui-song .person-photo { transform: scale(1.35); }
 .person-photo-frame-nianfu-wang .person-photo { transform: scale(1.3); }
 .person-photo-frame-rongqi-lu .person-photo { transform: scale(1.25); }
+
+/* Match the shared site blue for every profile icon. */
+.person-flip .bi { color: #4a78a8; }
+.person-flip button:hover .bi, .person-resource:hover .bi { color: #1f4c85; }
