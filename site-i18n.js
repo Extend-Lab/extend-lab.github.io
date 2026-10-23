@@ -295,7 +295,7 @@
                 "<h3>张育龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年春季至今</span></p>",
                 "<h3>熊浩</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年秋季至今</span></p>",
                 "<h3>张子儒</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
-                "<h3>郑佳宁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
+                "<h3>郑嘉宁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
                 "<h3>张栩棱</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年秋季至今</span></p>",
                 "<h3>张馨仁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年秋季至今</span></p>",
                 "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年秋季至今</span></p>",
