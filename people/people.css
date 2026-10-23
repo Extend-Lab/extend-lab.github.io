@@ -48,3 +48,51 @@
 /* Match the shared site blue for every profile icon. */
 .person-flip .bi { color: #4a78a8; }
 .person-flip button:hover .bi, .person-resource:hover .bi { color: #1f4c85; }
+
+/* Local design preview: the same deep-space palette as the homepage hero. */
+.person-back {
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(90,166,255,.19), transparent 53%),
+    radial-gradient(ellipse at 0% 100%, rgba(74,108,230,.12), transparent 45%),
+    linear-gradient(135deg, #081527 0%, #0d2743 44%, #12375a 68%, #08192f 100%);
+  border: 1px solid rgba(148,206,246,.34);
+  box-shadow: 0 12px 30px rgba(4,14,30,.2), inset 0 1px 0 rgba(200,230,255,.14);
+  color: #edf6ff;
+}
+.person-back::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 88% 9%, rgba(190,221,255,.65) 0 .7px, transparent 1.1px),
+    radial-gradient(circle at 74% 32%, rgba(190,221,255,.3) 0 .6px, transparent 1px),
+    radial-gradient(circle at 94% 61%, rgba(190,221,255,.45) 0 .7px, transparent 1.1px),
+    radial-gradient(circle at 13% 82%, rgba(190,221,255,.35) 0 .6px, transparent 1px),
+    radial-gradient(circle at 65% 91%, rgba(190,221,255,.4) 0 .7px, transparent 1.1px);
+}
+.person-back::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #87caff, transparent);
+  pointer-events: none;
+}
+.person-back > * { position: relative; }
+.person-back h3 { color: #f2f8ff; }
+.person-back-heading, .person-back .person-resources, .person-back .person-return-button { border-color: rgba(148,206,246,.2); }
+.person-back-heading > span, .person-back h4, .person-back .person-pending { color: #a7bed6; }
+.person-back .person-topics li { color: #e0edfa; }
+.person-back .person-topics li::before { background: #86c9ff; box-shadow: 0 0 6px rgba(90,182,255,.35); }
+.person-back .person-resource, .person-back .person-return-button { color: #c0ddf8; }
+.person-back .bi { color: #87caff; }
+.person-back .person-resource:hover, .person-back .person-return-button:hover { color: #fff; }
+.person-back .person-resource:hover .bi, .person-back button:hover .bi { color: #bce5ff; }
+.person-back .person-back-content { scrollbar-color: #4a78a8 transparent; }
+.person-back button:focus-visible, .person-back .person-resource:focus-visible { outline-color: #87caff; }
+.person-back .person-resource > .bi { color: #87caff; }
+.person-back .person-resource:hover > .bi { color: #bce5ff; }
