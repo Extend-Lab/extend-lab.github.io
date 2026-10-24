@@ -7,7 +7,7 @@ import re
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://' + (ROOT / 'CNAME').read_text().strip()
+ORIGIN = 'https://extend-lab.github.io'
 DESCRIPTIONS = {
     '': 'EXTEND Lab at HKUST(GZ), The Hong Kong University of Science and Technology (Guangzhou), researches reinforcement learning, multi-agent systems, robotics, and edge intelligence.',
     'about': 'Learn about EXTEND Lab at HKUST(GZ), our mission, and research in reinforcement learning, multi-agent systems, embodied AI, and edge intelligence.',
