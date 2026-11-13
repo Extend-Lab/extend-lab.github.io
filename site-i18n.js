@@ -301,9 +301,10 @@
                 "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年秋季至今</span></p>",
                 "<h3>宋光辉</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2026年秋季至今</span></p>",
                 "<h3>朱光智</h3><p>硕士研究生</p>",
+                "<h3>Jinglian Ouyang</h3><p>硕士研究生</p>",
                 "<h3>王年福</h3><p>来自哈尔滨工业大学（深圳）与鹏城实验室的访问博士生</p>",
-                "<h3>陆荣琦</h3><p><span class=\"person-role-line\">硕士毕业于西安电子科技大学。</span><span class=\"person-role-line\">即将入职华为。</span></p>",
-                "<h3>张耀尹</h3><p>来自复旦大学的访问本科生</p>"
+                "<h3>陆荣琦</h3><p><span class=\"person-role-line\">研究助理</span><span class=\"person-role-line\">在华为工作</span></p>",
+                "<h3>Chun Zhan</h3><p>研究助理</p>"
               ]
             },
             {

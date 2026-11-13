@@ -1,5 +1,23 @@
 const FALLBACK_SEARCH_INDEX = [
   {
+    "title": "News: Jianing Zheng — IEEE WCL Paper Accepted",
+    "titleZh": "动态：Jianing Zheng 的 IEEE WCL 论文接收",
+    "url": "news/#news-publication-wcl-jianing-accepted-2026",
+    "category": "News",
+    "categoryZh": "动态",
+    "text": "jianing zheng ieee wireless communications letters wcl semantic-aware physics-informed spatial spectrum map reconstruction in low-altitude networks accepted november 9 2026 spectrum sensing wireless communications multi-agent architecture",
+    "textZh": "Jianing Zheng 郑嘉宁 郑佳宁 IEEE WCL 论文 接收 低空网络中语义感知、物理信息驱动的空间频谱地图重建 2026年11月9日 频谱感知 无线通信 多智能体架构"
+  },
+  {
+    "title": "News: Jianing Zheng — IEEE TMC Paper Accepted",
+    "titleZh": "动态：Jianing Zheng 的 IEEE TMC 论文接收",
+    "url": "news/#news-publication-tmc-jianing-swarm-accepted-2026",
+    "category": "News",
+    "categoryZh": "动态",
+    "text": "jianing zheng ieee transactions on mobile computing tmc hierarchical graph swarm learning for personalised and energy-efficient edge intelligence accepted november 7 2026",
+    "textZh": "Jianing Zheng 郑嘉宁 郑佳宁 IEEE TMC 论文 接收 面向个性化与高能效边缘智能的分层图群体学习 2026年11月7日"
+  },
+  {
     title: "About EXTEND Lab",
     titleZh: "关于 EXTEND Lab",
     url: "about/",
@@ -104,8 +122,8 @@ const FALLBACK_SEARCH_INDEX = [
     url: "people/",
     category: "People",
     categoryZh: "成员",
-    text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
-    textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 朱光智 王年福 博士生 硕士 访问学生"
+    text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu jinglian ouyang chun zhan research assistant world models diffusion models human agent collaboration nianfu wang phd mphil visiting students",
+    textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 朱光智 Jinglian Ouyang Chun Zhan 研究助理 世界模型 扩散模型 人类与智能体协作 王年福 博士生 硕士 访问学生"
   },
   {
     title: "Research Publications",

@@ -4,3 +4,10 @@
 - Include the shared `typography.css` stylesheet on every content page, including standalone event pages. Keep its upright-text rule and list exclusions in place.
 - Write paper and event titles in News/Publication Highlights cards, Events cards, and other body copy as plain text rather than wrapping them in `<em>` or textual `<i>` tags. Do not introduce italic or oblique text outside the list exceptions. Bootstrap icon elements such as `<i class="bi ...">` are allowed.
 - Apply the same typography rules to English and Chinese content and to future pages and updates.
+
+# People photos
+
+- Keep all People card photo areas the same height at each responsive breakpoint, across Research Team and Collaborators, in both English and Chinese.
+- Use the shared card layout and uniform reserved name/role space in `people/people.css` for current and future members. Do not add member-specific card heights, photo heights, or role-space overrides.
+- Individual photo cropping may adjust `object-position` or image scale within the shared photo area without changing its height.
+- Keep the People grid at four columns on wide screens, three on medium screens, and two on narrow screens and phones; never switch it to one column. Use the shared 4:5 `.person-photo-frame` for every portrait and let card height scale with its width.

@@ -1,6 +1,64 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      "id": "news-publication-wcl-jianing-accepted-2026",
+      "type": "news",
+      "category": "publication",
+      "categoryLabel": "Publication",
+      "categoryLabelZh": "论文动态",
+      "title": "Paper Accepted by IEEE Wireless Communications Letters",
+      "titleZh": "Jianing Zheng 的论文被 IEEE WCL 接收",
+      "bodyHtml": "<strong>Ms. Jianing Zheng</strong>'s paper, Semantic-Aware Physics-Informed Spatial Spectrum Map Reconstruction in Low-Altitude Networks, was accepted by IEEE Wireless Communications Letters on <strong>9 November 2026</strong>. This work marks the start of Jianing's focus on spectrum sensing for wireless communications using a multi-agent architecture.",
+      "bodyHtmlZh": "<strong>Jianing Zheng</strong> 的论文 Semantic-Aware Physics-Informed Spatial Spectrum Map Reconstruction in Low-Altitude Networks 于 <strong>2026 年 11 月 9 日</strong>被 IEEE Wireless Communications Letters 接收。从这项工作开始，Jianing 聚焦无线通信中的频谱感知研究，并采用多智能体架构。",
+      "summaryHtml": "<strong>Ms. Jianing Zheng</strong>'s IEEE WCL paper on spatial spectrum map reconstruction marks the start of her focus on spectrum sensing for wireless communications using a multi-agent architecture.",
+      "summaryHtmlZh": "<strong>Jianing Zheng</strong> 的空间频谱地图重建论文被 IEEE WCL 接收，标志着她开始聚焦采用多智能体架构的无线通信频谱感知研究。",
+      "displayDate": "9 Nov 2026",
+      "displayDateZh": "2026年11月9日",
+      "sortDate": "2026-11-09",
+      "homepageVisual": {
+        "type": "art-image",
+        "src": "./assets/news/WCL.jpg",
+        "alt": "IEEE Wireless Communications Letters journal graphic",
+        "altZh": "IEEE Wireless Communications Letters 期刊封面"
+      },
+      "image": {
+        "src": "./assets/news/WCL.jpg",
+        "alt": "IEEE Wireless Communications Letters journal graphic",
+        "altZh": "IEEE Wireless Communications Letters 期刊封面"
+      },
+      "searchText": "jianing zheng ieee wireless communications letters wcl semantic-aware physics-informed spatial spectrum map reconstruction in low-altitude networks accepted november 9 2026 spectrum sensing wireless communications multi-agent architecture",
+      "searchTextZh": "Jianing Zheng 郑嘉宁 郑佳宁 IEEE WCL 论文 接收 低空网络中语义感知、物理信息驱动的空间频谱地图重建 2026年11月9日 频谱感知 无线通信 多智能体架构"
+    },
+    {
+      "id": "news-publication-tmc-jianing-swarm-accepted-2026",
+      "type": "news",
+      "category": "publication",
+      "categoryLabel": "Publication",
+      "categoryLabelZh": "论文动态",
+      "title": "Paper Accepted by IEEE Transactions on Mobile Computing",
+      "titleZh": "Jianing Zheng 的论文被 IEEE TMC 接收",
+      "bodyHtml": "<strong>Ms. Jianing Zheng</strong>'s paper, Hierarchical Graph Swarm Learning for Personalised and Energy-Efficient Edge Intelligence, was accepted by IEEE Transactions on Mobile Computing on <strong>7 November 2026</strong>.",
+      "bodyHtmlZh": "<strong>Jianing Zheng</strong> 的论文 Hierarchical Graph Swarm Learning for Personalised and Energy-Efficient Edge Intelligence 于 <strong>2026 年 11 月 7 日</strong>被 IEEE Transactions on Mobile Computing 接收。",
+      "summaryHtml": "<strong>Ms. Jianing Zheng</strong>'s paper on hierarchical graph swarm learning for personalised and energy-efficient edge intelligence was accepted by IEEE TMC.",
+      "summaryHtmlZh": "<strong>Jianing Zheng</strong> 关于面向个性化与高能效边缘智能的分层图群体学习的论文被 IEEE TMC 接收。",
+      "displayDate": "7 Nov 2026",
+      "displayDateZh": "2026年11月7日",
+      "sortDate": "2026-11-07",
+      "homepageVisual": {
+        "type": "art-image",
+        "src": "./assets/news/TMC.jpg",
+        "alt": "IEEE Transactions on Mobile Computing journal graphic",
+        "altZh": "IEEE Transactions on Mobile Computing 期刊封面"
+      },
+      "image": {
+        "src": "./assets/news/TMC.jpg",
+        "alt": "IEEE Transactions on Mobile Computing journal graphic",
+        "altZh": "IEEE Transactions on Mobile Computing 期刊封面"
+      },
+      "searchText": "jianing zheng ieee transactions on mobile computing tmc hierarchical graph swarm learning for personalised and energy-efficient edge intelligence accepted november 7 2026",
+      "searchTextZh": "Jianing Zheng 郑嘉宁 郑佳宁 IEEE TMC 论文 接收 面向个性化与高能效边缘智能的分层图群体学习 2026年11月7日"
+    },
+    {
       id: "news-publication-globecom-sixi-accepted-2026",
       type: "news",
       category: "publication",
@@ -1567,8 +1625,8 @@
       url: "people/",
       category: "People",
       categoryZh: "成员",
-      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guanghui song guangzhi zhu nianfu wang rongqi lu phd mphil msc visiting students xidian university huawei",
-      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 宋光辉 朱光智 王年福 陆荣琦 博士生 硕士 访问学生 西安电子科技大学 华为"
+      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guanghui song guangzhi zhu jinglian ouyang chun zhan research assistant world models diffusion models human agent collaboration nianfu wang rongqi lu phd mphil msc visiting students huawei",
+      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 宋光辉 朱光智 Jinglian Ouyang Chun Zhan 研究助理 世界模型 扩散模型 人类与智能体协作 王年福 陆荣琦 博士生 硕士 访问学生 华为"
     },
     {
       title: "Research Publications",
