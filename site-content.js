@@ -1575,6 +1575,15 @@
       textZh: "使命 价值观 打破边界 无限可能 强化学习 多智能体系统 机器人 具身智能"
     },
     {
+      title: "Research: Multi-Agent Systems and MARL",
+      titleZh: "研究：多智能体系统与多智能体强化学习",
+      url: "research/",
+      category: "Research",
+      categoryZh: "研究",
+      text: "multi-agent systems MAS MARL multi-agent reinforcement learning coordinated decision making task allocation heterogeneous agents adaptive collaboration",
+      textZh: "多智能体系统 MAS MARL 多智能体强化学习 协同决策 任务分配 异构智能体 自适应协作"
+    },
+    {
       title: "Research: Real-World Perception and Reasoning",
       titleZh: "研究：真实世界感知与推理",
       url: "research/",
@@ -1591,15 +1600,6 @@
       categoryZh: "研究",
       text: "physical ai embodied intelligence robotics human robot multi-robot collaboration interaction adaptation simulation to reality",
       textZh: "物理智能 具身智能 机器人 人机协作 多机器人协作 物理交互 适应 仿真到现实"
-    },
-    {
-      title: "Research: Multi-Agent Systems and MARL",
-      titleZh: "研究：多智能体系统与多智能体强化学习",
-      url: "research/",
-      category: "Research",
-      categoryZh: "研究",
-      text: "multi-agent systems MAS MARL multi-agent reinforcement learning coordinated decision making task allocation heterogeneous agents adaptive collaboration",
-      textZh: "多智能体系统 MAS MARL 多智能体强化学习 协同决策 任务分配 异构智能体 自适应协作"
     },
     {
       title: "Research: Cloud and Edge Computing",
