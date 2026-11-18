@@ -525,7 +525,7 @@
             {
               selector: "#project-detail-3 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>于言滔博士，香港科技大学</li><li>张子儒</li></ul></div><div><h3>项目简介</h3><p>面向建筑作业场景，设计平滑且安全的人机协作鲁棒辅助行为。</p></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>于言滔博士，香港科技大学</li><li>张子儒</li><li>宋光辉</li></ul></div><div><h3>项目简介</h3><p>面向建筑作业场景，设计平滑且安全的人机协作鲁棒辅助行为。</p></div></div>"
             },
             {
               selector: "#project-detail-4 .project-detail-panel",
