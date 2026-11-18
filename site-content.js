@@ -1589,8 +1589,8 @@
       url: "research/",
       category: "Research",
       categoryZh: "研究",
-      text: "real-world multimodal data perception reasoning contextual understanding industrial environments",
-      textZh: "真实世界 多模态数据 感知 推理 情境理解 工业环境"
+      text: "real-world multimodal data perception reasoning contextual understanding environments",
+      textZh: "真实世界 多模态数据 感知 推理 情境理解 环境"
     },
     {
       title: "Research: Physical AI Collaboration",
