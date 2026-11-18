@@ -72,40 +72,40 @@ const FALLBACK_SEARCH_INDEX = [
     textZh: "展开讲讲 OpenClaw AI Agent 李佳乐 Claude Code"
   },
   {
-    title: "Research: Multi-Agent Systems",
-    titleZh: "研究：多智能体系统",
+    title: "Research: Real-World Perception and Reasoning",
+    titleZh: "研究：真实世界感知与推理",
     url: "research/",
     category: "Research",
     categoryZh: "研究",
-    text: "multi-agent systems collaborative competitive intelligence cyber-physical tasks",
-    textZh: "多智能体系统 协作 竞争 智能 信息物理"
+    text: "real-world multimodal data perception reasoning contextual understanding industrial environments",
+    textZh: "真实世界 多模态数据 感知 推理 情境理解 工业环境"
   },
   {
-    title: "Research: Robotic/Embodied AI",
-    titleZh: "研究：机器人 / 具身智能",
+    title: "Research: Physical AI Collaboration",
+    titleZh: "研究：物理智能协作",
     url: "research/",
     category: "Research",
     categoryZh: "研究",
-    text: "robotic embodied ai perception adaptation dynamic environments",
-    textZh: "机器人 具身智能 感知 适应 动态环境"
+    text: "physical ai embodied intelligence robotics human robot multi-robot collaboration interaction adaptation simulation to reality",
+    textZh: "物理智能 具身智能 机器人 人机协作 多机器人协作 物理交互 适应 仿真到现实"
   },
   {
-    title: "Research: Simulation-to-Reality RL",
-    titleZh: "研究：仿真到现实强化学习",
+    title: "Research: Multi-Agent Systems and MARL",
+    titleZh: "研究：多智能体系统与多智能体强化学习",
     url: "research/",
     category: "Research",
     categoryZh: "研究",
-    text: "simulation to reality reinforcement learning physical deployment training environments",
-    textZh: "仿真到现实 强化学习 物理部署"
+    text: "multi-agent systems MAS MARL multi-agent reinforcement learning coordinated decision making task allocation heterogeneous agents adaptive collaboration",
+    textZh: "多智能体系统 MAS MARL 多智能体强化学习 协同决策 任务分配 异构智能体 自适应协作"
   },
   {
-    title: "Research: Edge Intelligence and Wireless Systems",
-    titleZh: "研究：边缘智能与无线系统",
+    title: "Research: Cloud and Edge Computing",
+    titleZh: "研究：云与边缘计算",
     url: "research/",
     category: "Research",
     categoryZh: "研究",
-    text: "edge intelligence wireless systems resource allocation communications intelligent infrastructure",
-    textZh: "边缘智能 无线系统 资源分配 通信"
+    text: "cloud edge computing cloud-edge collaboration distributed learning inference resource allocation AI deployment",
+    textZh: "云计算 边缘计算 云边协同 分布式学习 推理 计算资源 资源分配 人工智能部署"
   },
   {
     title: "Projects",
